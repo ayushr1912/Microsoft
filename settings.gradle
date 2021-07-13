@@ -1,0 +1,2 @@
+rootProject.name = "Microsoft Engage App 2021"
+include ':app'

@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="300dp"
+    android:layout_height="wrap_content"
+    android:padding="8dp">
+
+    <TextView
+        android:id="@+id/senderFirstChar"
+        android:layout_width="35dp"
+        android:layout_height="35dp"
+        android:background="@drawable/oval_background"
+        android:backgroundTint="#000"
+        android:gravity="center"
+        android:text="F"
+        android:textColor="#808080"
+        android:textSize="25sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/senderName" />
+
+    <TextView
+        android:id="@+id/senderName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:text="Name"
+        android:visibility="gone"
+        app:layout_constraintBottom_toTopOf="@id/textMessage"
+        app:layout_constraintStart_toEndOf="@id/senderFirstChar"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textMessage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:background="@drawable/chat_left_bg"
+        android:padding="5dp"
+        android:text="Hi"
+        android:textSize="25sp"
+        app:layout_constraintStart_toEndOf="@id/senderFirstChar"
+        app:layout_constraintTop_toBottomOf="@id/senderName" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
